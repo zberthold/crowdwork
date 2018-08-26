@@ -13,6 +13,7 @@
 		B500B316212E6EF200C80633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B500B315212E6EF200C80633 /* Assets.xcassets */; };
 		B500B319212E6EF200C80633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B500B317212E6EF200C80633 /* LaunchScreen.storyboard */; };
 		B50A6DB921325A98009E660E /* ClassHomework.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6DB821325A98009E660E /* ClassHomework.swift */; };
+		B50A6DBB21325EB6009E660E /* AddNewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50A6DBA21325EB6009E660E /* AddNewClassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B500B318212E6EF200C80633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B500B31A212E6EF300C80633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B50A6DB821325A98009E660E /* ClassHomework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassHomework.swift; sourceTree = "<group>"; };
+		B50A6DBA21325EB6009E660E /* AddNewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B500B30E212E6EF000C80633 /* AppDelegate.swift */,
 				B500B310212E6EF000C80633 /* ViewController.swift */,
 				B500B312212E6EF000C80633 /* Main.storyboard */,
+				B50A6DBA21325EB6009E660E /* AddNewClassViewController.swift */,
 				B50A6DB821325A98009E660E /* ClassHomework.swift */,
 				B500B315212E6EF200C80633 /* Assets.xcassets */,
 				B500B317212E6EF200C80633 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				B500B311212E6EF000C80633 /* ViewController.swift in Sources */,
 				B50A6DB921325A98009E660E /* ClassHomework.swift in Sources */,
+				B50A6DBB21325EB6009E660E /* AddNewClassViewController.swift in Sources */,
 				B500B30F212E6EF000C80633 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

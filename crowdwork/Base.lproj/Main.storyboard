@@ -52,7 +52,13 @@
                             <outlet property="delegate" destination="rhv-tR-rwx" id="NYn-bW-DBW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qpx-Oo-XGA"/>
+                    <navigationItem key="navigationItem" id="qpx-Oo-XGA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DFX-Pt-kMU">
+                            <connections>
+                                <segue destination="AyJ-YS-F9C" kind="show" id="dpm-C8-IxN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWL-Yt-QZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,30 +71,73 @@
                     <view key="view" contentMode="scaleToFill" id="Pmp-XJ-f9L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-pU-7Lq">
-                                <rect key="frame" x="28" y="305" width="200" height="200"/>
-                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2O4-e6-CGw"/>
-                                    <constraint firstAttribute="width" constant="200" id="US1-Te-WCn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tqT-pU-7Lq" firstAttribute="top" secondItem="w3g-LR-p5m" secondAttribute="top" constant="241" id="Ham-ds-pzH"/>
-                            <constraint firstItem="w3g-LR-p5m" firstAttribute="trailing" secondItem="tqT-pU-7Lq" secondAttribute="trailing" constant="147" id="vSC-ll-E1R"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w3g-LR-p5m"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3om-RI-32r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2417" y="35"/>
+            <point key="canvasLocation" x="2660" y="70"/>
+        </scene>
+        <!--Add New Class View Controller-->
+        <scene sceneID="s6U-JS-jhx">
+            <objects>
+                <viewController id="AyJ-YS-F9C" customClass="AddNewClassViewController" customModule="crowdwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAR-N5-S8n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wij-Qh-dSd">
+                                <rect key="frame" x="87.5" y="120" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="21A-fr-BqG"/>
+                                    <constraint firstAttribute="width" constant="200" id="mcJ-5h-sYL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="24"/>
+                                <state key="normal" title="Add A Class">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewClass:" destination="AyJ-YS-F9C" eventType="touchUpInside" id="Jpp-Tc-lvs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExA-T1-R64">
+                                <rect key="frame" x="170" y="560" width="35" height="74"/>
+                                <state key="normal" title="done"/>
+                                <connections>
+                                    <action selector="doneChoosingClass:" destination="AyJ-YS-F9C" eventType="touchUpInside" id="A2o-rX-sXi"/>
+                                    <segue destination="rhv-tR-rwx" kind="show" id="TKt-vp-pFe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="KcA-FX-kGF" firstAttribute="trailing" secondItem="ExA-T1-R64" secondAttribute="trailing" constant="170" id="Dha-Qp-fh9"/>
+                            <constraint firstItem="ExA-T1-R64" firstAttribute="top" secondItem="wij-Qh-dSd" secondAttribute="bottom" constant="390" id="Eam-i9-spE"/>
+                            <constraint firstItem="ExA-T1-R64" firstAttribute="leading" secondItem="KcA-FX-kGF" secondAttribute="leading" constant="170" id="SoB-Dq-FNc"/>
+                            <constraint firstItem="wij-Qh-dSd" firstAttribute="centerX" secondItem="tAR-N5-S8n" secondAttribute="centerX" id="T07-CM-NqD"/>
+                            <constraint firstItem="wij-Qh-dSd" firstAttribute="top" secondItem="KcA-FX-kGF" secondAttribute="top" constant="100" id="ZCl-Pk-wBY"/>
+                            <constraint firstItem="KcA-FX-kGF" firstAttribute="bottom" secondItem="ExA-T1-R64" secondAttribute="bottom" constant="33" id="cAf-hU-s9z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KcA-FX-kGF"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tME-rY-1GV" appends="YES" id="xoE-tL-w1O"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addAClassButton" destination="wij-Qh-dSd" id="CRP-oQ-UHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLQ-kT-bF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tME-rY-1GV">
+                    <connections>
+                        <action selector="onLabelTapped:" destination="AyJ-YS-F9C" id="Jlc-XT-cWR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2394" y="-731"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2dK-ah-8rv">
@@ -109,4 +158,8 @@
             <point key="canvasLocation" x="661.60000000000002" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dpm-C8-IxN"/>
+        <segue reference="TKt-vp-pFe"/>
+    </inferredMetricsTieBreakers>
 </document>
