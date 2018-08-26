@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1kx-Pi-3q0" kind="show" id="gnt-9t-1k4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -53,6 +57,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWL-Yt-QZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600.8" y="34.632683658170919"/>
+        </scene>
+        <!--Class Homework-->
+        <scene sceneID="J6s-dF-h5M">
+            <objects>
+                <viewController id="1kx-Pi-3q0" customClass="ClassHomework" customModule="crowdwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pmp-XJ-f9L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-pU-7Lq">
+                                <rect key="frame" x="28" y="305" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2O4-e6-CGw"/>
+                                    <constraint firstAttribute="width" constant="200" id="US1-Te-WCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tqT-pU-7Lq" firstAttribute="top" secondItem="w3g-LR-p5m" secondAttribute="top" constant="241" id="Ham-ds-pzH"/>
+                            <constraint firstItem="w3g-LR-p5m" firstAttribute="trailing" secondItem="tqT-pU-7Lq" secondAttribute="trailing" constant="147" id="vSC-ll-E1R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w3g-LR-p5m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3om-RI-32r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2dK-ah-8rv">
